@@ -9,6 +9,142 @@
 </head>
 
 <body>
+  <!-- 
+Crie uma página simples e responsiva apresentando, ao menos, 5 questões elaboradas por você sobre os assuntos responsividade e Mobile-first.
+
+Após cada questão, elenque quatro opções de resposta, sendo apenas uma delas a resposta correta.
+
+Após as opções de resposta, apresente um parágrafo revelando qual a resposta correta e a justificativa.
+
+No layout padrão, vertical, deve apresentar cada questão na parte superior da página, seguida, imediatamente, das opções na parte inferior e, seguidas da resposta correta e da justificativa.
+
+- Não implemente códigos CSS no arquivo HTML.
+- O layout diferenciado, horizontal, deve apresentar a questão ao lado das opções de resposta, já a resposta correta e a justificativa devem aparecer abaixo das anteriores.
+- Quando no layout diferenciado, horizontal, houver espaço suficiente, deve apresentar a questão ao lado das opções de resposta, estas então, estarão ao lado da resposta correta e a justificativa. Esta opção de layout não pode estar disponível para impressão.
+- O texto deve ter o seu tamanho alterado conforme a disponibilidade de espaço no viewport, porém ele não pode ficar menor do que 10px e nem maior do que 30px.
+- Pense Mobile-first!
+-->
+
+  <h1>Questões sobre responsividade e Mobile-first</h1>
+
+
+  <div class="card">
+    <div class="question-container">
+      <h2>O que são media queries?</h2>
+
+      <ol>
+        <li>Funções JavaScript que alteram o layout do site.
+        </li>
+        <li>Regras CSS que ajustam o estilo com base no tamanho da tela.</li>
+        <li>Imagens que se adaptam automaticamente ao tamanho da tela.</li>
+        <li>Tipos de fontes que mudam de acordo com o dispositivo.</li>
+      </ol>
+    </div>
+
+    <div class="answer-container">
+      <p>Resposta correta: <strong>b</strong></p>
+      <p>Justificativa: As media queries são usadas em CSS para aplicar diferentes estilos dependendo das
+        características
+        do
+        dispositivo, como
+        a largura da tela. Isso permite que o design de um site seja responsivo e se adapte a diferentes tamanhos de
+        dispositivos, como smartphones, tablets e desktops.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card">
+
+    <div class="question-container">
+      <h2>Qual media query usar para aplicar estilos CSS somente ao imprimir uma página web?</h2>
+
+      <ol>
+        <li>@media screen</li>
+        <li>@media print</li>
+        <li>@media olny-print</li>
+        <li>@media all</li>
+      </ol>
+    </div>
+
+    <div class="answer-container">
+      <p>Resposta correta: <strong>c</strong></p>
+      <p>Justificativa: A media query "@media print" é usada para aplicar estilos específicos quando o conteúdo de uma
+        página é impresso.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card">
+
+    <div class="question-container">
+      <h2>Como escrever uma media query para aplicar estilos apenas a dispositivos com uma largura de tela de no
+        máximo 768 pixels?</h2>
+
+      <ol>
+        <li>@media screen and (min-width: 768px)</li>
+        <li>@media screen and (max-width: 768px)</li>
+        <li>@media screen and (width: 768px)</li>
+        <li>@media screen and (viewport-width: 768px)</li>
+      </ol>
+    </div>
+
+    <div class="answer-container">
+      <p>Resposta correta: <strong>b</strong></p>
+      <p>Justificativa: A media query "@media screen and (max-width: 768px)" é usada para aplicar estilos específicos a
+        dispositivos
+        com uma largura de tela de no máximo 768 pixels.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card">
+
+    <div class="question-container">
+      <h2>Como aplicar estilos diferentes para telas com largura entre 480 e 1024 pixels?</h2>
+
+      <ol>
+        <li>@media screen and (min-width: 480px) and (max-width: 1024px)</li>
+        <li>@media screen and (width: 480px) and (width: 1024px)</li>
+        <li>@media screen and (min-width: 1024px) and (max-width: 480px)</li>
+        <li>@media screen and (viewport-width: 480px, 1024px)</li>
+      </ol>
+    </div>
+
+    <div class="answer-container">
+      <p>Resposta correta: <strong>a</strong></p>
+      <p>Justificativa: A sintaxe "@media screen and (min-width: 480px) and (max-width: 1024px)" é usada para aplicar
+        estilos
+        diferentes a telas com largura entre 480 e 1024 pixels.</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="card">
+
+    <div class="question-container">
+      <h2>Como aplicar um estilo específico somente quando a orientação da tela for retrato (portrait)?</h2>
+
+      <ol>
+        <li>@media (orientation: landscape)</li>
+        <li>@media (orientation: portrait)</li>
+        <li>@media (min-orientation: portrait)</li>
+        <li>@media (portrait)</li>
+      </ol>
+    </div>
+
+    <div class="answer-container">
+      <p>Resposta correta: <strong>b</strong></p>
+      <p>Justificativa: A media query "@media (orientation: portrait)" é usada para aplicar um estilo específico somente
+        quando a orientação da tela for retrato (portrait).</p>
+    </div>
+  </div>
+
+  <hr>
+
 
 </body>
 
