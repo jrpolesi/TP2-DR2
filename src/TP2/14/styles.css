@@ -48,9 +48,12 @@ a {
 header {
   background-color: var(--color-primary);
   color: var(--color-contrast);
+  padding: 10px 20px;
+}
+
+.header-content {
   display: flex;
   align-items: center;
-  padding: 10px 20px;
   gap: 20px;
 }
 
@@ -193,7 +196,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-  header {
+  .header-content {
     gap: 40px;
   }
 
