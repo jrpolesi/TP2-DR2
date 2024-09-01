@@ -1,0 +1,3 @@
+p {
+  font-size: clamp(10px, 5vw, 30px);
+}
