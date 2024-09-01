@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+li {
+  width: fit-content
+}
+
+p, li {
+  font-size: 0.95rem;
+}
+
+ol {
+  list-style-type: lower-alpha;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p, li {
+    font-size: 1rem;
+  }
+}
+
+@media (pointer: fine) {
+  li {
+    cursor: pointer;
+  }
+}
