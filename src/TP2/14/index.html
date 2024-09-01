@@ -4,12 +4,124 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="./styles.css">
   <title>Document</title>
 </head>
 
 <body>
+  <!-- 
+Implemente uma página simples apresentando o seu perfil.
 
+Nesta página você deve apresentar:
+
+- uma imagem que te identifique;
+- um texto com informações sobre você;
+- imagens que representem você nos seus hobbies;
+- uma lista de imagens que identifique os seus amigos.
+- Esta página deve ser responsiva, de modo que, quando o usuário estiver em um dispositivo maior, o layout deve ser reorganizado para apresentar os dados de uma melhor forma - podendo até apresentar mais informações.
+
+Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsivo. Em caso de não haver espaço suficiente, o menu deve funcionar em modo expande - colapsa.
+
+- Não implemente códigos CSS no arquivo HTML.
+- O menu não precisa estar funcional.
+- Implemente estilos diferentes para o esquema de cores light e dark.
+- Pense Mobile-first!
+-->
+
+  <header>
+    <h1>Face</h1>
+    <nav>
+      <span class="material-symbols-outlined menu-btn">
+        menu
+      </span>
+
+      <ul>
+        <li>
+          <a href="#perfil">
+            <span class="item-label">Perfil</span>
+          </a>
+        </li>
+        <li>
+          <a href="#amigos">
+            <span class="item-label">Amigos</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about">
+            <span class="item-label">About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#hobbies">
+            <span class="item-label">Hobbies</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <button id="dark-mode-btn" class="dark-mode-btn material-symbols-outlined">
+      dark_mode
+    </button>
+  </header>
+
+  <main class="container">
+    <section class="network">
+      <div id="perfil" class="perfil">
+        <img src="./images/perfil.jpg" alt="Imagem de perfil">
+        <div>
+          <h2>José Polesi</h2>
+          <span>jose.polesi@al.infnet.edu.br</span>
+        </div>
+      </div>
+
+      <div id="amigos" class="amigos-list">
+        <h2>Amigos</h2>
+
+        <ul>
+          <li><img src="./images/amigo1.jpg"
+              alt="Mulher de pele clara e cabelos loiros com céu azul sem nuvens no fundo">
+          </li>
+          <li><img src="./images/amigo2.jpg" alt="Homem de cabelo grisalho e uma parede de ferramentas no fundo"></li>
+          <li><img src="./images/amigo3.jpg" alt="Mulher de cabelos castanhos com árvores no fundo"></li>
+          <li><img src="./images/amigo4.jpg"
+              alt="Homem de cabelo curto e loiro com o fundo preto e uma iluminação lateral">
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div id="about" class="about">
+      <h2>Sobre mim</h2>
+
+      <p>Olá, meu nome é José Polesi e estou no primeiro ano do curso de Engenharia de Software. Aos 25 anos, decidi
+        investir na minha paixão por tecnologia e programação, o que me trouxe para o mundo acadêmico com a intenção de
+        construir uma base sólida para minha carreira. Apesar de estar no início da minha jornada, já estou imerso em
+        projetos e atividades que me permitem explorar e aplicar conceitos fundamentais da área.
+      </p>
+      <p>
+        Com uma forte motivação para aprender e crescer, tenho me dedicado a adquirir habilidades práticas e teóricas
+        que
+        me ajudarão a enfrentar desafios futuros. Estou entusiasmado com as oportunidades de desenvolvimento que o curso
+        proporciona e ansioso para contribuir com meu entusiasmo e criatividade em projetos colaborativos, enquanto
+        continuo a construir meu conhecimento e experiência no campo do desenvolvimento de software.</p>
+    </div>
+
+    <div id="hobbies" class="hobbies-list">
+      <h2>Meus hobbies</h2>
+
+      <ul>
+        <li><img src="./images/basquete.jpg" alt="Cesta de basquete vista de baixo para cima, e um homem enterrando">
+        </li>
+        <li><img src="./images/tenis.jpg" alt="Raquete de tênis e bolinha no chão de um quadra de tênis"></li>
+        <li><img src="./images/futebol.jpg" alt="Bola de futebol parada no gramado verde de um campo de futebol"></li>
+        <li><img src="./images/academia.jpg" alt="Homem fazendo levantamento terra em uma academia"></li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
