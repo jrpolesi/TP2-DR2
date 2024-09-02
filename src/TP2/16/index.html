@@ -41,16 +41,16 @@ Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsiv
 
           <ul>
             <li>
-              <a href="#"> Home </a>
+              <a href="#">Home</a>
             </li>
             <li>
-              <a href="#"> Sobre nós </a>
+              <a href="#">Favoritos</a>
             </li>
             <li>
-              <a href="#"> Produtos </a>
+              <a href="#">Em alta</a>
             </li>
             <li>
-              <a href="#"> Carrinho </a>
+              <a href="#">Perfil</a>
             </li>
           </ul>
         </nav>
@@ -64,21 +64,25 @@ Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsiv
       </div>
     </header>
 
-    <main>
-      <section class="destaque">
-        <video src="./assets/videos/video.mp4"></video>
-        <div class="destaque--info">
-          <div class="destaque--info-header">
-            <h2>Primeira navegação</h2>
-            <p>José Polesi</p>
-          </div>
-          <div class="destaque--actions">
-            <button class="material-symbols-outlined">thumb_up</button>
-            <button class="material-symbols-outlined">share</button>
-            <button class="material-symbols-outlined">bookmark</button>
-            <button class="material-symbols-outlined">report</button>
+    <main class="container">
+      <div class="main-layout">
+        <section class="destaque">
+          <video src="./assets/videos/video.mp4" controls></video>
 
-            <p class="destaque--description">
+          <div class="destaque--info">
+            <div class="destaque--info-header">
+              <div class="destaque--metadata">
+                <h2>Primeira navegação</h2>
+                <p>José Polesi</p>
+              </div>
+              <div class="destaque--actions">
+                <button class="material-symbols-outlined">thumb_up</button>
+                <button class="material-symbols-outlined">share</button>
+                <button class="material-symbols-outlined">bookmark</button>
+                <button class="material-symbols-outlined">report</button>
+              </div>
+            </div>
+            <p>
               Neste vídeo emocionante, acompanhe uma aula de navegação aérea em
               um icônico Paulistinha, onde um aluno vivencia sua primeira
               experiência de voo. Vistas deslumbrantes e uma perspectiva única
@@ -89,11 +93,96 @@ Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsiv
               não se esqueça de deixar seu like e compartilhar!
             </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <div class="conteudo-secundario conteudo-secundario--mobile">
+        <div class="conteudo-secundario conteudo-secundario--mobile">
+          <section class="ads">
+            <h3>Anúncios</h3>
+            <div>
+              <img
+                src="./assets/images/ads.jpg"
+                alt="Imagem de mesa de casino mostrando as mãos dos jogadores jogando poker"
+              />
+            </div>
+          </section>
+
+          <section class="relacionados">
+            <h3>Vídeos relacionados</h3>
+
+            <ul>
+              <li>
+                <img
+                  src="./assets/images/thumb1.jpg"
+                  alt="Imagem de um avião da United voando, com o céu completamente limpo e azul no fundo"
+                />
+                <h4>Voando na United</h4>
+                <span>Pedro</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/thumb2.jpg"
+                  alt="Imagem de avião voando, com nuvens densas no fundo"
+                />
+                <h4>Voando na primeira classe</h4>
+                <span>Maria</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/thumb3.jpg"
+                  alt="Imagem de avião monomotor vermelho de pequeno porte, parado em uma montanha coberta de neve"
+                />
+                <h4>Pousos difíceis</h4>
+                <span>Ana Paula</span>
+              </li>
+              <li>
+                <img
+                  src="./assets/images/thumb4.jpg"
+                  alt="Imagem de avião voando, mostrando o avião indo cada vez mais longe"
+                />
+                <h4>Meu último voo</h4>
+                <span>João</span>
+              </li>
+            </ul>
+          </section>
+        </div>
+
+        <section class="comentarios">
+          <h3>Comentários</h3>
+
+          <ul>
+            <li>
+              <div class="comentario--header">
+                <h4>João</h4>
+                -
+                <span class="comentario--date">12/12/2020</span>
+              </div>
+              <p>Excelente vídeo, imagens lindas!</p>
+            </li>
+            <li>
+              <div class="comentario--header">
+                <h4>Maria</h4>
+                -
+                <span class="comentario--date">13/12/2020</span>
+              </div>
+              <p>Adorei o vídeo, muito inspirador!</p>
+            </li>
+            <li>
+              <div class="comentario--header">
+                <h4>Aninha</h4>
+                -
+                <span class="comentario--date">16/11/2023</span>
+              </div>
+              <p>
+                Excelente, Poderia gravar um video contando como foi a
+                experiência.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="conteudo-secundario">
         <section class="ads">
+          <h3>Anúncios</h3>
           <div>
             <img
               src="./assets/images/ads.jpg"
@@ -101,14 +190,17 @@ Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsiv
             />
           </div>
         </section>
+
         <section class="relacionados">
+          <h3>Vídeos relacionados</h3>
+
           <ul>
             <li>
               <img
                 src="./assets/images/thumb1.jpg"
                 alt="Imagem de um avião da United voando, com o céu completamente limpo e azul no fundo"
               />
-              <h3>Voando na United</h3>
+              <h4>Voando na United</h4>
               <span>Pedro</span>
             </li>
             <li>
@@ -116,68 +208,29 @@ Esta página deve ter um menu com, no mínimo, 4 itens, que também é responsiv
                 src="./assets/images/thumb2.jpg"
                 alt="Imagem de avião voando, com nuvens densas no fundo"
               />
-              <h3>Voando na primeira classe</h3>
-              <p>Maria</p>
+              <h4>Voando na primeira classe</h4>
+              <span>Maria</span>
             </li>
             <li>
               <img
                 src="./assets/images/thumb3.jpg"
                 alt="Imagem de avião monomotor vermelho de pequeno porte, parado em uma montanha coberta de neve"
               />
-              <h3>Pousos difíceis</h3>
-              <p>Ana Paula</p>
+              <h4>Pousos difíceis</h4>
+              <span>Ana Paula</span>
             </li>
             <li>
               <img
                 src="./assets/images/thumb4.jpg"
                 alt="Imagem de avião voando, mostrando o avião indo cada vez mais longe"
               />
-              <h3>Meu último voo</h3>
-              <p>João</p>
+              <h4>Meu último voo</h4>
+              <span>João</span>
             </li>
           </ul>
         </section>
       </div>
-
-      <section class="comentarios">
-        <h3>Comentários</h3>
-
-        <ul>
-          <li>
-            <div class="comentario--header">
-              <h4>João</h4>
-              -
-              <span class="comentario--date">12/12/2020</span>
-            </div>
-            <p>Excelente vídeo, imagens lindas!</p>
-          </li>
-          <li>
-            <div class="comentario--header">
-              <h4>Maria</h4>
-              -
-              <span class="comentario--date">13/12/2020</span>
-            </div>
-            <p>Adorei o vídeo, muito inspirador!</p>
-          </li>
-          <li>
-            <div class="comentario--header">
-              <h4>Aninha</h4>
-              -
-              <span class="comentario--date">16/11/2023</span>
-            </div>
-            <p>
-              Excelente, Poderia gravar um video contando como foi a
-              experiência.
-            </p>
-          </li>
-        </ul>
-      </section>
     </main>
-
-    <!-- <div class="conteudo-secundario">
-    <section class="ads"></section>
-    <section class="relacionados"></section>
-  </div> -->
 
     <script src="./scripts.js"></script>
   </body>
